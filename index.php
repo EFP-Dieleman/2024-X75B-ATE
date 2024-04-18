@@ -34,8 +34,8 @@ if (isset($_GET['page'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJECT</title>
+    <link rel="stylesheet" href="X75B.css">
 </head>
-
 <body>
     <nav>
         <ul>
@@ -45,10 +45,9 @@ if (isset($_GET['page'])) {
             <li><a href="index.php?page=login">Connexion</a></li>
             <li><a href="index.php?page=logout">Déconnexion</a></li>
             <li><a href="index.php?page=profile">Profil</a></li>
-            <li><a href="index.php?page=product">Article</a></li>
+            <li><a href="index.php?page=product">Item</a></li>
         </ul>
     </nav>
     <?php echo $page ?>
 </body>
-
 </html>

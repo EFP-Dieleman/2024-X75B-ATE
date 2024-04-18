@@ -1,0 +1,9 @@
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    display:flex;
+    gap:1rem;
+}
