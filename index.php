@@ -3,22 +3,7 @@
 $page = 'Page accueil defaut';
 
 if (isset($_GET['page'])) {
-
-    if ($_GET['page'] == 'contact') {
-        $page = 'Page contact';
-    } else if ($_GET['page'] == 'catalog') {
-        $page = 'Page catalogue';
-    } else if ($_GET['page'] == 'register') {
-        $page = 'register.html';
-    } else if ($_GET['page'] == 'login') {
-        $page = 'login.html';
-    } else if ($_GET['page'] == 'logout') {
-        $page = 'Page logout';
-    } else if ($_GET['page'] == 'profile') {
-        $page = 'Page profile';
-    } else if ($_GET['page'] == 'product') {
-        $page = 'Page item';
-    }
+    $page = realpath('pages/' . $_GET['page'] . '.html');
 } elseif (isset($_GET['action'])) {
     die('SINGLE ACTION NO PAGE');
 } else {
@@ -36,6 +21,7 @@ if (isset($_GET['page'])) {
     <title>PROJECT</title>
     <link rel="stylesheet" href="X75B.css">
 </head>
+
 <body>
     <nav>
         <ul>
@@ -48,6 +34,13 @@ if (isset($_GET['page'])) {
             <li><a href="index.php?page=product">Item</a></li>
         </ul>
     </nav>
-    <?php echo $page ?>
+
+    <?php
+    if (file_exists($page))
+        include $page;
+    else
+        include 'pages/home.html';
+    ?>
 </body>
+
 </html>
