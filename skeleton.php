@@ -23,15 +23,15 @@
                     'profile' => 'Profil',
                     'product' => 'Item'
                 ];
+
+                foreach($menu as $href => $label){
+                    // echo '<li><a href="index.php?page=' . $href . '">' . $label . '</a></li>';
+                    printf('<li><a href="index.php?page=%s">%s</a></li>', $href, $label);
+                    
+                }
                 
                 ?>
-                <li><a href="index.php?page=contact">Contact</a></li>
-                <li><a href="index.php?page=catalog">Catalogue</a></li>
-                <li><a href="index.php?page=register">Inscription</a></li>
-                <li><a href="index.php?page=login">Connexion</a></li>
-                <li><a href="index.php?page=logout">Déconnexion</a></li>
-                <li><a href="index.php?page=profile">Profil</a></li>
-                <li><a href="index.php?page=product">Item</a></li>
+               
             </ul>
         </nav>
     </header>
