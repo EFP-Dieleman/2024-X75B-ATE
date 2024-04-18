@@ -9,9 +9,9 @@ if (isset($_GET['page'])) {
     } else if ($_GET['page'] == 'catalog') {
         $page = 'Page catalogue';
     } else if ($_GET['page'] == 'register') {
-        $page = 'Page inscription';
+        $page = 'register.html';
     } else if ($_GET['page'] == 'login') {
-        $page = 'Page login';
+        $page = 'login.html';
     } else if ($_GET['page'] == 'logout') {
         $page = 'Page logout';
     } else if ($_GET['page'] == 'profile') {
