@@ -37,7 +37,6 @@
     </header>
 
     <main>
-
         <?php
         if (file_exists($page))
             include $page;
@@ -45,7 +44,34 @@
             include 'pages/home.html';
         ?>
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <!-- info contact -->
+            X75B
+            02 386 70 58
+            x75b@amstram.Be
+            
+            <!-- socials -->
+            FB
+            X
+            INSTA
+            LINKED
+        </div>
+        
+        <div>
+
+            <!-- maps -->
+        </div>
+            
+        <div>
+
+            <!-- partenaires/liens/CGV -->
+        </div>
+
+        <div>
+            <!-- copyright -->
+        </div>
+    </footer>
 </body>
 
 </html>
