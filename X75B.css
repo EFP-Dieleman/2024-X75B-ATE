@@ -1,9 +1,46 @@
-
-li{
-    list-style-type: none;
+main {
+    border: 1px solid red;
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 ul{
     display:flex;
     gap:1rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+form div {
+    text-align: center;
+}
+
+label{
+    display:block;
+    margin-top:1rem;
+}
+
+input, textarea{
+    width:100%;
+    border-radius:5px;
+    border:1px solid black;
+    padding:0.5rem;
+    resize:none;
+}
+
+button{
+    margin:1rem;
+    border:1px solid black;
+    border-radius:5px;
+    background:#DCD;
+    padding:0.5rem 1rem;
+}
+
+button:hover{
+    background:red;
 }
