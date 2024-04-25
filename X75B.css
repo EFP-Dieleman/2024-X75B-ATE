@@ -1,9 +1,9 @@
 @import url('normalize.css');
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -14,24 +14,25 @@ main {
     justify-content: center;
 }
 
-header{
-    padding:1.5rem 0;
+header {
+    padding: 1.5rem 0;
 }
 
-header, footer{
-    background:#123;
+header,
+footer {
+    background: #123;
 }
 
-header nav ul{
-    display:flex;
-    justify-content:center;
-    gap:1rem;
-    margin:0;
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
 }
 
-header nav ul a{
-    color:white;
-    text-decoration:none;
+header nav ul a {
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -45,45 +46,57 @@ form div {
     text-align: center;
 }
 
-label{
-    display:block;
-    margin-top:1rem;
+label {
+    display: block;
+    margin-top: 1rem;
 }
 
-input, textarea{
-    width:100%;
-    border-radius:5px;
-    border:1px solid black;
-    padding:0.5rem;
-    resize:none;
+input,
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0.5rem;
+    resize: none;
 }
 
-button{
-    margin:1rem;
-    border:1px solid black;
-    border-radius:5px;
-    background:#DCD;
-    padding:0.5rem 1rem;
+button {
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #DCD;
+    padding: 0.5rem 1rem;
 }
 
-button:hover{
-    background:red;
+button:hover {
+    background: red;
 }
 
 
-footer{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    color:#FFF;
+footer {
+    color: #FFF;
 }
 
-footer > *:last-child{
+footer>*:last-child {
     grid-column: span 3;
-    text-align:center;
-    padding:1rem;
+    text-align: center;
+    padding: 1rem;
 }
 
-footer img{
-    max-width:33rem;
+article.catalog {
+    border: 1px solid #F0F;
+    max-width: 20rem;
 }
 
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+@media (min-width: 1000px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        color: #FFF;
+    }
+}
