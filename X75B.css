@@ -96,6 +96,26 @@ article.catalog>div {
     padding: 1rem;
 }
 
+article.catalog footer{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    margin-top:1rem;
+}
+
+article.catalog .price{
+    margin-left:auto;
+}
+
+html[lang="nl"] article.catalog .price::before,
+html[lang="fr"] article.catalog .price::after{
+    /** Unicode for Euro symbol */
+    content: '\20AC'; 
+}
+html[lang="en"] article.catalog .price::before{
+    content: '$';
+
+}
 img {
     max-width: 100%;
     height: auto;
