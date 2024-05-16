@@ -6,12 +6,23 @@
     padding: 0;
 }
 
+html, body{
+    height:100vh;
+}
+body{
+    display:flex;
+    flex-direction: column;
+}
+
 main {
     border: 1px solid red;
     max-width: 80rem;
     margin: 0 auto;
     display: flex;
+    flex-grow: 1;
     justify-content: center;
+    align-items: center;
+    
 }
 
 body>header {
@@ -121,3 +132,10 @@ img {
     height: auto;
 }
 
+
+section:has(.catalog){
+    display:flex;
+    flex-wrap:wrap;
+    gap:1rem;
+    justify-content:space-evenly;
+}

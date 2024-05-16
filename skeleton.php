@@ -41,7 +41,7 @@
         if (file_exists($page))
             include $page;
         else
-            include 'pages/home.html';
+            include 'pages/home.php';
         ?>
     </main>
     <footer>
