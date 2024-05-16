@@ -10,7 +10,6 @@ $images = [];
 $dir = 'public/poster';
 
 $directories = scandir($dir);
-var_dump($directories);
 foreach($directories as $directory){
     
     if($directory == '.' || $directory == '..'){
