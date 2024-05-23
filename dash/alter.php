@@ -1,4 +1,5 @@
 <?php
+
 $record = [];
 
 if(isset($_GET['id'])){
@@ -9,6 +10,8 @@ if(isset($_GET['id'])){
 }
 
 ?>
+
+
 <form action="save.php" method="POST">
     <input type="hidden" name="id" value="<?=$record['id']?>">
     <label for="label">Label</label>
