@@ -13,6 +13,5 @@ if (isset($_GET['type'])) {
     $type = $_GET['type'];
 } 
 
-var_dump($type, $page);
 // afficher la page
 require_once 'backend.php';

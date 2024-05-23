@@ -1,7 +1,7 @@
 <?php
-require_once '../connection.php';
-
+require_once '../../connection.php';
 // is an update ?
+
 if(empty($_POST['id'])){
     $sql = 'INSERT INTO category (label) VALUES (:label)';
     $stmt = $pdo->prepare($sql);
@@ -13,4 +13,4 @@ else{
     $stmt->execute([$_POST['label'], $_POST['id']]);
 }
 
-header('Location: index.php?type=category&page=listing');
+header('Location: ../index.php?type=category&page=listing');

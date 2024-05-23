@@ -17,7 +17,11 @@
         </nav>
     </header>
     <main>
-        <?php require $type.'/'.$page . '.php'; ?>
+        <?php
+        $path = $type . '/' . $page . '.php';
+        if (file_exists($path)) {
+            require $path;
+        }; ?>
     </main>
 </body>
 
